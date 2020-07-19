@@ -1,0 +1,19 @@
+    {
+      "kind": "PersistentVolumeClaim",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "nexus"
+      },
+      "spec": {
+        "accessModes": [
+          "ReadWriteOnce"
+        ],
+        "resources": {
+          "requests": {
+            "storage": "10Mi"
+          }
+        },
+        "storageClassName": "rook-ceph-block-internal",
+        "volumeMode": "Filesystem"
+      }
+    }
